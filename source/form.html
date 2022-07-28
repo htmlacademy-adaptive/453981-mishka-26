@@ -6,9 +6,37 @@
 </head>
 <body class="page__body">
 <header class="main-header">
-  <a class="main-header__logo" href="#">
+  <a class="main-header__logo" href="index.html">
     <img src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка.">
   </a>
+
+  <nav class="main-navigation">
+    <button class="button main-navigation__toggle" type="button">
+      <span class="visually-hidden">Открыть меню.</span>
+    </button>
+
+    <div class="main-navigation__wrapper">
+      <ul class="main-navigation__list site-list">
+        <li class="main-navigation__item">
+          <a href="catalog.html">Каталог товаров</a>
+        </li>
+
+        <li class="main-navigation__item">
+          <a href="#">Вязание на заказ</a>
+        </li>
+      </ul>
+
+      <ul class="main-navigation__list user-list">
+        <li class="main-navigation__item">
+          <a href="#">Поиск по сайту</a>
+        </li>
+
+        <li class="main-navigation__item">
+          <a href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </header>
 <main>
   <section class="order">
@@ -21,8 +49,8 @@
       мы свяжемся с вами, чтобы
       уточнить детали.</p>
     <form action="https://echo.htmlacademy.ru/" method="post">
-      <fieldset class="form__fieldset" name="type">
-        <legend class="fieldset__legend">Тип</legend>
+      <fieldset class="order-form__fieldset" name="type">
+        <legend class="order-form__legend">Тип</legend>
 
         <label class="form-label">
           <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,8 +80,8 @@
         </label>
       </fieldset>
 
-      <fieldset class="form__fieldset" name="color">
-        <legend class="fieldset__legend">Цвет</legend>
+      <fieldset class="order-form__fieldset" name="color">
+        <legend class="order-form__legend">Цвет</legend>
 
         <label class="form-label">
           <input class="form-input form-input--checkbox" type="checkbox" name="color" value="white">
@@ -121,8 +149,8 @@
         </label>
       </fieldset>
 
-      <fieldset class="form__fieldset" name="fullName">
-        <legend class="fieldset__legend">ФИО</legend>
+      <fieldset class="order-form__fieldset" name="fullName">
+        <legend class="order-form__legend">ФИО</legend>
 
         <label class="form-label">
           <span class="form-label__text">Имя</span>
@@ -143,31 +171,32 @@
         </label>
       </fieldset>
 
-      <fieldset class="form__fieldset" name="phone">
-        <legend class="fieldset__legend">Тел</legend>
+      <fieldset class="order-form__fieldset" name="phone">
+        <legend class="order-form__legend">Тел</legend>
 
         <label>
           <input class="form-input form-input--text-field" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
         </label>
       </fieldset>
 
-      <fieldset class="form__fieldset" name="email">
-        <legend class="fieldset__legend">e-mail</legend>
+      <fieldset class="order-form__fieldset" name="email">
+        <legend class="order-form__legend">e-mail</legend>
 
         <label>
           <input class="form-input form-input--text-field" type="email" name="email" placeholder="Ваш Email*" required>
         </label>
       </fieldset>
 
-      <fieldset class="form__fieldset" name="additional">
-        <legend class="fieldset__legend">Доп</legend>
+      <fieldset class="order-form__fieldset" name="additional">
+        <legend class="order-form__legend">Доп</legend>
 
         <label>
-          <textarea class="form-input form-input--textarea" rows="7" name="additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <textarea class="form-input form-input--textarea" rows="7" name="additional"
+                    placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </label>
       </fieldset>
 
-      <p class="form__description">*Поля обязательны для заполнения</p>
+      <p class="order-form__description">*Поля обязательны для заполнения</p>
 
       <button class="button button--primary" type="submit">
         Отправить заказ
@@ -212,10 +241,10 @@
     </ul>
   </section>
 
-  <div class="footer__divider"></div>
+  <div class="divider"></div>
 
   <section class="developed">
-    <h3>Разработано</h3>
+    <h3 class="heading heading--h3">Разработано</h3>
 
     <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
