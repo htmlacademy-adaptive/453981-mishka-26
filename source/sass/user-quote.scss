@@ -1,1 +1,12 @@
-// style
+.user-quote {
+  &__author {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  &__link {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

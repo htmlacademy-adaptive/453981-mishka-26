@@ -1,1 +1,10 @@
-// style
+.product {
+  &__description {
+    font-size: 13px;
+    line-height: 30px;
+  }
+
+  &__price {
+    font-weight: 700;
+  }
+}

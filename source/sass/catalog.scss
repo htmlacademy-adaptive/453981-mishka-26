@@ -1,1 +1,5 @@
-// style
+.catalog {
+  &__products {
+    @include section-inner-space;
+  }
+}

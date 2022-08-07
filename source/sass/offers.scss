@@ -1,1 +1,21 @@
-// style
+.offers {
+  @include section-inner-space;
+
+  &__details-list {
+    line-height: 20px;
+  }
+
+  &__price {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  &__subtitle {
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $primary-light;
+    line-height: 20px;
+  }
+}

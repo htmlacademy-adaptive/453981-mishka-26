@@ -1,1 +1,12 @@
-// style
+.contacts {
+  @include section-inner-space;
+
+  &__address {
+    font-style: normal;
+  }
+
+  &__list {
+    font-size: 14px;
+    line-height: 30px;
+  }
+}

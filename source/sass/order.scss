@@ -1,1 +1,9 @@
-// style
+.order {
+  &__application {
+    @include section-inner-space;
+  }
+
+  &__description {
+    font-size: 13px;
+  }
+}

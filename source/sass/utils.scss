@@ -1,1 +1,23 @@
-// style
+.image {
+  max-width: 100%;
+  object-fit: contain;
+  line-height: 0;
+  vertical-align: top;
+}
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

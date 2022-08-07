@@ -1,1 +1,12 @@
-// style
+.page {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: $dark-gray;
+
+  &__body {
+    margin: 0;
+    padding: 0;
+    background-color: $white;
+  }
+}
