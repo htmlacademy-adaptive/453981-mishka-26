@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+  font-display: swap;
+}
+.image {
+  max-width: 100%;
+  object-fit: contain;
+  line-height: 0;
+  vertical-align: top;
+}
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #444444;
+}
+.page__body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.heading {
+  margin: 0;
+  color: #000000;
+}
+.heading--h1 {
+  font-size: 27px;
+  line-height: 30px;
+}
+.heading--h2 {
+  font-size: 25px;
+  line-height: 30px;
+}
+.heading--h3 {
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.hero {
+  padding: 74px 42px;
+  background-color: #f1f1f1;
+}
+
+.link {
+  color: #444444;
+  text-decoration: none;
+}
+
+.button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.advantages {
+  padding: 30px;
+}
+.advantages__description {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.catalog__products {
+  padding: 30px;
+}
+
+.contacts {
+  padding: 30px;
+}
+.contacts__address {
+  font-style: normal;
+}
+.contacts__list {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.content__header {
+  padding: 74px 30px 120px;
+  background-color: #f1f1f1;
+  background-image: url("../img/bears-in-house.png");
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.developed__title {
+  font-size: 19px;
+  line-height: 18px;
+}
+
+.features__item {
+  background-color: #63d1bb;
+}
+.features__item:nth-child(2n) {
+  background-color: #56c3b2;
+}
+.features__link {
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.feedback {
+  padding: 30px;
+}
+
+.form__description {
+  font-size: 14px;
+  line-height: 16px;
+}
+.form__label-text {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+}
+.form__text-field {
+  font-size: 17px;
+  line-height: 19px;
+}
+.form__title {
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 16px;
+  color: #63d1bb;
+}
+
+.navigation__link {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+
+.offers {
+  padding: 30px;
+}
+.offers__details-list {
+  line-height: 20px;
+}
+.offers__price {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.offers__subtitle {
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #63d1bb;
+  line-height: 20px;
+}
+
+.order__application {
+  padding: 30px;
+}
+.order__description {
+  font-size: 13px;
+}
+
+.page-footer {
+  padding: 30px;
+  background-color: #f1f1f1;
+}
+
+.product__description {
+  font-size: 13px;
+  line-height: 30px;
+}
+.product__price {
+  font-weight: 700;
+}
+
+.production {
+  padding: 30px;
+}
+.production__description {
+  font-size: 13px;
+}
+
+.user-quote__author {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.user-quote__link {
+  font-size: 17px;
+  line-height: 30px;
+}
+/*# sourceMappingURL=style.css.map */
