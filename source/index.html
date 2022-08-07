@@ -321,5 +321,33 @@
 
   </section>
 </footer>
+<div class="modal cart visually-hidden">
+  <h3 class="heading--h3 modal__title">Добавить в корзину</h3>
+
+  <span class="modal__subtitle">Выберите размер:</span>
+
+  <form action="https://echo.htmlacademy.ru/" method="post">
+    <fieldset name="size">
+      <label>
+        <input class="visually-hidden" type="radio" name="size" checked>
+
+        <span class="button cart__radio">S</span>
+      </label>
+
+      <label>
+        <input class="visually-hidden" type="radio" name="size">
+
+        <span class="button cart__radio">M</span>
+      </label>
+
+      <label>
+        <input class="visually-hidden" type="radio" name="size">
+
+        <span class="button cart__radio">L</span>
+      </label>
+    </fieldset>
+    <button class="button button--accented cart__button" type="submit">Добавить</button>
+  </form>
+</div>
 </body>
 </html>
