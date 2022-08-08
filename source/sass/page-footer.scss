@@ -1,0 +1,5 @@
+.page-footer {
+  @include section-inner-space;
+
+  background-color: $main-background-color;
+}

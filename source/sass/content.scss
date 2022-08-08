@@ -1,0 +1,10 @@
+.content {
+  &__header {
+    padding: 74px 30px 120px;
+    background-color: $main-background-color;
+    background-image: url("../img/bears-in-house.png");
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
