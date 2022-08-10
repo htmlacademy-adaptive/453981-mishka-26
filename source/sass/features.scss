@@ -1,15 +1,13 @@
-.features {
-  &__item {
-    background-color: $primary-light;
+.features__item {
+  background-color: $primary-light;
+}
 
-    &:nth-child(2n) {
-      background-color: $primary-dark;
-    }
-  }
+.features__item:nth-child(2n) {
+  background-color: $primary-dark;
+}
 
-  &__link {
-    font-size: 19px;
-    line-height: 24px;
-    color: $white;
-  }
+.features__link {
+  font-size: 19px;
+  line-height: 24px;
+  color: $white;
 }

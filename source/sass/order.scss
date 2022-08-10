@@ -1,9 +1,7 @@
-.order {
-  &__application {
-    @include section-inner-space;
-  }
+.order__application {
+  @include section-inner-space;
+}
 
-  &__description {
-    font-size: 13px;
-  }
+.order__description {
+  font-size: 13px;
 }

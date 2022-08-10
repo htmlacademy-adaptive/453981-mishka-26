@@ -1,5 +1,3 @@
-.catalog {
-  &__products {
-    @include section-inner-space;
-  }
+.catalog__products {
+  @include section-inner-space;
 }
