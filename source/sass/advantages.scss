@@ -1,5 +1,7 @@
+@use "mixins";
+
 .advantages {
-  @include section-inner-space;
+  @include mixins.section-inner-space;
 }
 
 .advantages__description {

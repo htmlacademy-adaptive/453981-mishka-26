@@ -1,6 +1,8 @@
+@use "variables";
+
 .heading {
   margin: 0;
-  color: $black;
+  color: variables.$black;
 }
 
 .heading--h1 {

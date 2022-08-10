@@ -1,5 +1,8 @@
-.page-footer {
-  @include section-inner-space;
+@use "mixins";
+@use "variables";
 
-  background-color: $main-background-color;
+.page-footer {
+  @include mixins.section-inner-space;
+
+  background-color: variables.$main-background-color;
 }

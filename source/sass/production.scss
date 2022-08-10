@@ -1,5 +1,7 @@
+@use "mixins";
+
 .production {
-  @include section-inner-space;
+  @include mixins.section-inner-space;
 }
 
 .product__description {

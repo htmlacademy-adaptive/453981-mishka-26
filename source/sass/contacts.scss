@@ -1,5 +1,7 @@
+@use "mixins";
+
 .contacts {
-  @include section-inner-space;
+  @include mixins.section-inner-space;
 }
 
 .contacts__address {

@@ -1,5 +1,7 @@
+@use "mixins";
+
 .order__application {
-  @include section-inner-space;
+  @include mixins.section-inner-space;
 }
 
 .order__description {

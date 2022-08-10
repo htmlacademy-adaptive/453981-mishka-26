@@ -1,5 +1,8 @@
+@use "mixins";
+@use "variables";
+
 .offers {
-  @include section-inner-space;
+  @include mixins.section-inner-space;
 }
 
 .offers__details-list {
@@ -16,6 +19,6 @@
   font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;
-  color: $primary-light;
+  color: variables.$primary-light;
   line-height: 20px;
 }

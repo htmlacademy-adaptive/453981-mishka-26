@@ -1,4 +1,6 @@
+@use "variables";
+
 .hero {
   padding: 74px 42px;
-  background-color: $main-background-color;
+  background-color: variables.$main-background-color;
 }

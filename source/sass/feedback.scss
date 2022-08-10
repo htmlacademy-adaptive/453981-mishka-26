@@ -1,3 +1,5 @@
+@use "mixins";
+
 .feedback {
-  @include section-inner-space;
+  @include mixins.section-inner-space;
 }

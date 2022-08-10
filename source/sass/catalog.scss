@@ -1,3 +1,5 @@
+@use "mixins";
+
 .catalog__products {
-  @include section-inner-space;
+  @include mixins.section-inner-space;
 }
