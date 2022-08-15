@@ -1,9 +1,0 @@
-@use "mixins";
-
-.order__application {
-  @include mixins.section-inner-space;
-}
-
-.order__description {
-  font-size: 13px;
-}

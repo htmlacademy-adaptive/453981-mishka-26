@@ -1,0 +1,27 @@
+@use "../global/variables";
+
+@media (min-width: variables.$min-tablet-width) {
+  .feedback__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .feedback__slider-buttons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: variables.$min-desktop-width) {
+  .feedback__container {
+    display: grid;
+    grid-template-columns: 175px 1fr;
+  }
+
+  .feedback__title,
+  .feedback__list {
+    grid-column: 2;
+  }
+}

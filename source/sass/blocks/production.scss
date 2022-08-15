@@ -1,0 +1,43 @@
+@use "../global/variables";
+
+.production__container {
+  display: grid;
+}
+
+.production__title {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -57px;
+    width: 32px;
+    height: 22px;
+    background-image: url("../../img/video.svg");
+    background-repeat: no-repeat;
+    content: "";
+  }
+}
+
+@media (min-width: variables.$min-tablet-width) {
+  .production__image {
+    grid-row: 1;
+  }
+}
+
+@media (min-width: variables.$min-desktop-width) {
+  .production__container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 52px;
+  }
+
+  .production__image {
+    grid-column: 1/3;
+    grid-row: 1/4;
+  }
+
+  .production__description,
+  .production__button {
+    grid-column: 3;
+  }
+}

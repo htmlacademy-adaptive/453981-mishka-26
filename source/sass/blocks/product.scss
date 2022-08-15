@@ -1,0 +1,16 @@
+@use "../global/variables";
+
+.product__description {
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.product__price {
+  font-weight: 700;
+}
+
+@media (min-width: variables.$min-tablet-width) {
+  .product__image-link {
+    grid-row: 1 / 5;
+  }
+}

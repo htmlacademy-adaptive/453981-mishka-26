@@ -1,0 +1,77 @@
+@use "../global/mixins";
+@use "../global/variables";
+
+.offers {
+  position: relative;
+}
+
+.offers__container {
+  display: grid;
+  grid-template-areas: "title" "subtitle" "description" "details-list" "image" "price" "order";
+}
+
+.offers__content {
+  grid-area: content;
+}
+
+.offers__description {
+  grid-area: description;
+}
+
+.offers__details-list {
+  grid-area: details-list;
+  line-height: 20px;
+}
+
+.offers__image {
+  grid-area: image;
+}
+
+.offers__order {
+  grid-area: order;
+}
+
+.offers__price {
+  grid-area: price;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.offers__title {
+  grid-area: title;
+}
+
+.offers__subtitle {
+  grid-area: subtitle;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: variables.$primary-light;
+  line-height: 20px;
+}
+
+@media (min-width: variables.$min-tablet-width) {
+  .offers__container {
+    grid-template-areas: "title title" "description image" "details-list image" "price image" "order image";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .offers__subtitle {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: variables.$min-desktop-width) {
+  .offers__container {
+    grid-template-areas: ". title image" ". description image" ". details-list image" ". price image" ". order image";
+    grid-template-columns: 175px 350px 50%;
+  }
+
+  .offers__subtitle {
+    left: 0;
+    right: auto;
+  }
+}

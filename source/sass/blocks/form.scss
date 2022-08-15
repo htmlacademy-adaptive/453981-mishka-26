@@ -1,8 +1,12 @@
-@use "variables";
+@use "../global/variables";
 
 .form__description {
   font-size: 14px;
   line-height: 16px;
+}
+
+.form__group {
+  display: grid;
 }
 
 .form__label-text {

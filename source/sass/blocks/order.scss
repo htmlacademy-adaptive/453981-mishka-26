@@ -1,0 +1,41 @@
+@use "../global/variables";
+
+.order__description {
+  font-size: 13px;
+}
+
+.order__fields {
+  display: grid;
+}
+
+@media (min-width: variables.$min-tablet-width) {
+  .order__actions {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .order__color {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .order__group {
+    grid-template-columns: 167px 1fr;
+  }
+
+  .order__group-title {
+    display: contents;
+    grid-column: 1;
+  }
+}
+
+@media (min-width: variables.$min-desktop-width) {
+  .order__actions,
+  .order__description {
+    padding-left: 167px;
+  }
+
+  .order__color {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

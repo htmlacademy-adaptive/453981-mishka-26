@@ -1,0 +1,14 @@
+@use "../global/variables";
+
+.page-footer {
+  padding: 25px 0;
+  background-color: variables.$main-background-color;
+}
+
+@media (min-width: variables.$min-tablet-width) {
+  .page-footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 60px;
+  }
+}

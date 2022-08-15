@@ -1,0 +1,36 @@
+@use "../global/variables";
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.features__item {
+  &--interior {
+    background-color: variables.$primary-light;
+  }
+
+  &--toys {
+    background-color: variables.$primary-dark;
+  }
+}
+
+.features__link {
+  font-size: 19px;
+  line-height: 24px;
+  color: variables.$white;
+}
+
+@media (min-width: variables.$min-tablet-width) {
+  .features {
+    grid-template-columns: 1fr 1fr;
+    width: 668px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: variables.$min-desktop-width) {
+  .features {
+    width: 1050px;
+  }
+}
