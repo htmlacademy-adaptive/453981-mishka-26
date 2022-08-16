@@ -1,0 +1,6 @@
+@use "../global/variables";
+
+.link {
+  color: variables.$dark-gray;
+  text-decoration: none;
+}

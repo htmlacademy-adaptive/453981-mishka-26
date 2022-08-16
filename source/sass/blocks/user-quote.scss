@@ -1,0 +1,19 @@
+.user-quote {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-quote__author {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.user-quote__link {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.user-quote__text {
+  margin: 0;
+}

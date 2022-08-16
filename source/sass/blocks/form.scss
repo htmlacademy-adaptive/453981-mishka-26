@@ -1,0 +1,29 @@
+@use "../global/variables";
+
+.form__description {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__group {
+  display: grid;
+}
+
+.form__label-text {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.form__text-field {
+  font-size: 17px;
+  line-height: 19px;
+}
+
+.form__title {
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 16px;
+  color: variables.$primary-light;
+}

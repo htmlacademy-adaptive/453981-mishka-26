@@ -1,0 +1,19 @@
+@use "../global/variables";
+
+.section__container {
+  position: relative;
+  margin: 0 30px;
+}
+
+@media (min-width: variables.$min-tablet-width) {
+  .section__container {
+    width: 668px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: variables.$min-desktop-width) {
+  .section__container {
+    width: 1050px;
+  }
+}

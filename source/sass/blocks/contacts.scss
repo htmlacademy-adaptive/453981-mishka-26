@@ -1,0 +1,32 @@
+@use "../global/variables";
+
+.contacts__address {
+  font-style: normal;
+}
+
+.contacts__list {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.contacts__map {
+  background-color: variables.$timberwolf;
+}
+
+@media (min-width: variables.$min-desktop-width) {
+  .contacts__container {
+    display: grid;
+    grid-template-columns: 175px 350px 50%;
+  }
+
+  .contacts__map {
+    grid-column: 3;
+    grid-row: 1/4;
+  }
+
+  .contacts__title,
+  .contacts__list,
+  .contacts__button {
+    grid-column: 2;
+  }
+}

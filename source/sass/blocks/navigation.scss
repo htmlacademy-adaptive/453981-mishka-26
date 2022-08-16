@@ -1,0 +1,19 @@
+@use "../global/variables";
+
+.navigation__item {
+  background-color: variables.$white;
+}
+
+.navigation__link {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: variables.$black;
+}
+
+
+@media (min-width: variables.$min-tablet-width) {
+  .navigation__item {
+    background-color: transparent;
+  }
+}
