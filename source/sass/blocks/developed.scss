@@ -1,4 +1,20 @@
+@use "../global/variables";
+
+.developed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 22px;
+}
+
 .developed__title {
+  margin-right: 27px;
   font-size: 19px;
   line-height: 18px;
+}
+
+@media (min-width: variables.$min-tablet-width) {
+  .developed {
+    margin: 0;
+  }
 }

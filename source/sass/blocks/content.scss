@@ -1,10 +1,7 @@
 @use "../global/variables";
 
-.content {
-  padding-top: 80px;
-}
-
 .content__header {
+  margin-bottom: 31px;
   padding: 74px 0 0;
   background-color: variables.$main-background-color;
   background-image: url("../../img/hero-bears-in-house.png");
@@ -22,10 +19,18 @@
   .content__title {
     margin-bottom: 372px;
   }
+
+  .content__header {
+    margin-bottom: 52px;
+  }
 }
 
 @media (min-width: variables.$min-desktop-width) {
   .content__title {
     margin-bottom: 355px;
+  }
+
+  .content__header {
+    margin-bottom: 71px;
   }
 }

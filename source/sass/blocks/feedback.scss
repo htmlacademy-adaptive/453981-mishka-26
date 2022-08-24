@@ -1,5 +1,13 @@
 @use "../global/variables";
 
+.feedback {
+  margin-bottom: 45px;
+}
+
+.feedback__button {
+  padding: 16px 66px;
+}
+
 @media (min-width: variables.$min-tablet-width) {
   .feedback__button {
     position: absolute;

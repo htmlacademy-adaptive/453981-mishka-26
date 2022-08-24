@@ -1,1 +1,11 @@
-// style
+@use "../global/variables";
+
+.slider__button {
+  border: 1px solid variables.$light-gray;
+}
+
+@media (min-width: variables.$min-tablet-width) {
+  .slider__button {
+    border: none;
+  }
+}

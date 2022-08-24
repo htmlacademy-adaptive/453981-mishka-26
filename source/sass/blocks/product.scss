@@ -1,16 +1,50 @@
 @use "../global/variables";
 
+.product__wrapper {
+  padding: 28px;
+  border: 1px solid variables.$line-color;
+}
+
+.product__actions {
+  display: flex;
+  justify-content: space-between;
+}
+
 .product__description {
+  margin: 0 0 18px;
   font-size: 13px;
   line-height: 30px;
+}
+
+.product__link {
+  margin-bottom: 6px;
+}
+
+.product__image-link {
+  display: block;
 }
 
 .product__price {
   font-weight: 700;
 }
 
+.product__divider {
+  margin-bottom: 22px;
+}
+
 @media (min-width: variables.$min-tablet-width) {
+  .product__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product__description {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: variables.$min-desktop-width) {
   .product__image-link {
-    grid-row: 1 / 5;
+    grid-row: 1;
   }
 }

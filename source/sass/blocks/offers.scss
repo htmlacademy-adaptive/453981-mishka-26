@@ -3,6 +3,7 @@
 
 .offers {
   position: relative;
+  margin-bottom: 36px;
 }
 
 .offers__container {
@@ -10,32 +11,44 @@
   grid-template-areas: "title" "subtitle" "description" "details-list" "image" "price" "order";
 }
 
-.offers__content {
-  grid-area: content;
-}
-
 .offers__description {
   grid-area: description;
 }
 
 .offers__details-list {
+  display: grid;
+  grid-template-columns: 100px 1fr;
   grid-area: details-list;
+  padding-bottom: 20px;
   line-height: 20px;
+}
+
+.offers__details-title,
+.offers__details-value {
+  padding: 15px 0;
+  border-bottom: 1px solid variables.$line-color;
+}
+
+.offers__details-value {
+  margin-left: 0;
 }
 
 .offers__image {
   grid-area: image;
 }
 
-.offers__order {
+.offers__order-button {
   grid-area: order;
+  padding: 16px 70px;
 }
 
 .offers__price {
   grid-area: price;
+  padding: 25px 83px;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+  white-space: nowrap;
 }
 
 .offers__title {

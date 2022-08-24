@@ -1,8 +1,16 @@
 @use "../global/variables";
 
 .page-header {
-  position: absolute;
+  position: relative;
   width: 100%;
+}
+
+.page-header--nojs {
+  position: relative;
+}
+
+.page-header--nojs .page-header__navigation-toggle {
+  display: none;
 }
 
 .page-header__delivery {
@@ -19,12 +27,6 @@
   vertical-align: top;
 }
 
-.page-header__navigation {
-  height: 80px;
-  overflow: hidden;
-  background-color: variables.$white;
-}
-
 .page-header__navigation-toggle {
   position: absolute;
   top: 50%;
@@ -39,14 +41,19 @@
 }
 
 @media (min-width: variables.$min-tablet-width) {
+  .page-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
   .page-header__delivery {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 
   .page-header__navigation {
     display: grid;
-    grid-template-columns: 1fr min-content;
-    overflow: visible;
+    grid-template-columns: 1fr max-content;
   }
 
   .page-header__navigation-toggle {
@@ -72,7 +79,7 @@
   }
 
   .page-header__navigation {
-    grid-template-columns: min-content 1fr min-content;
+    grid-template-columns: auto 1fr auto;
   }
 
   .page-header__promo-navigation {

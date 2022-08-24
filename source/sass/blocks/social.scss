@@ -1,1 +1,19 @@
-// style
+@use "../global/variables";
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.social__list {
+  display: flex;
+  gap: 29px;
+}
+
+@media (min-width: variables.$min-tablet-width) {
+  .social {
+    margin: 0;
+  }
+}

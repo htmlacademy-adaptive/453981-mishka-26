@@ -1,1 +1,22 @@
-// style
+@use "../global/variables";
+
+@media (min-width: variables.$min-tablet-width) {
+  .site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .site-navigation__item {
+    padding: 30px 25px 30px 0;
+  }
+}
+
+@media (min-width: variables.$min-desktop-width) {
+  .site-navigation__item {
+    padding: 30px 35px 30px 30px;
+  }
+
+  .site-navigation__item:not(:last-child) {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
