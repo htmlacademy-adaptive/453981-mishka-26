@@ -1,7 +1,10 @@
 @use "../global/variables";
 
 .navigation__item {
+  padding: 30px 0;
+  text-align: center;
   background-color: variables.$white;
+  border-top: 1px solid variables.$line-color;
 }
 
 .navigation__link {
@@ -9,11 +12,22 @@
   font-weight: 700;
   line-height: 24px;
   color: variables.$black;
-}
 
+  &--icon-search {
+    display: none;
+  }
+}
 
 @media (min-width: variables.$min-tablet-width) {
   .navigation__item {
+    padding: 30px 35px;
     background-color: transparent;
+    border: none;
+  }
+
+  .navigation__link {
+    &--icon-search {
+      display: inline-block;
+    }
   }
 }

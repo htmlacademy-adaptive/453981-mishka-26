@@ -6,19 +6,29 @@
 }
 
 .features__item {
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+
   &--interior {
     background-color: variables.$primary-light;
+    background-image: url("../../img/interior.svg");
+    background-position-x: right 36px;
   }
 
   &--toys {
     background-color: variables.$primary-dark;
+    background-image: url("../../img/toy.svg");
+    background-position-x: right 27px;
   }
 }
 
 .features__link {
+  display: block;
+  padding: 24px 90px 31px 30px;
   font-size: 19px;
   line-height: 24px;
   color: variables.$white;
+  text-align: left;
 }
 
 @media (min-width: variables.$min-tablet-width) {

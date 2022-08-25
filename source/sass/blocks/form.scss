@@ -1,12 +1,10 @@
 @use "../global/variables";
 
-.form__description {
-  font-size: 14px;
-  line-height: 16px;
-}
-
 .form__group {
-  display: grid;
+  position: relative;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .form__label-text {
@@ -16,8 +14,21 @@
 }
 
 .form__text-field {
+  padding: 17px 0;
+  width: 100%;
   font-size: 17px;
   line-height: 19px;
+  border: none;
+  border-bottom: 2px solid variables.$black;
+  background-color: transparent;
+}
+
+.form__textarea {
+  width: 100%;
+  padding: 17px;
+  box-sizing: border-box;
+  resize: none;
+  border: 2px solid variables.$black;
 }
 
 .form__title {
@@ -26,4 +37,16 @@
   text-transform: uppercase;
   line-height: 16px;
   color: variables.$primary-light;
+  background-color: variables.$white;
+}
+
+@media (min-width: variables.$min-tablet-width) {
+  .form__group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &::before {
+      display: none;
+    }
+  }
 }

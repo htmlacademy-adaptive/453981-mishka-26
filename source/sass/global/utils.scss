@@ -1,7 +1,8 @@
 @use "variables";
 
-.image {
+img {
   max-width: 100%;
+  height: auto;
   object-fit: contain;
   line-height: 0;
   vertical-align: top;
@@ -24,8 +25,16 @@
   overflow: hidden;
 }
 
+.hidden-mobile {
+  display: none;
+}
+
 @media (min-width: variables.$min-tablet-width) {
   .visible-mobile {
     display: none;
+  }
+
+  .hidden-mobile {
+    display: initial;
   }
 }

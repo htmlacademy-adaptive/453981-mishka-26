@@ -1,19 +1,49 @@
 @use "../global/variables";
 
+.contacts {
+  margin-bottom: 40px;
+}
+
 .contacts__address {
   font-style: normal;
 }
 
-.contacts__list {
+.contacts__email {
+  padding-bottom: 5px;
+  border-bottom: 1px solid variables.$line-color-secondary;
+}
+
+.contacts__details-list {
+  display: grid;
+  grid-template-columns: 76px 1fr;
   font-size: 14px;
   line-height: 30px;
 }
 
 .contacts__map {
+  margin-bottom: 42px;
   background-color: variables.$timberwolf;
 }
 
+.contacts__map iframe {
+  border: none;
+}
+
+.contacts__button {
+  padding: 16px 38px;
+}
+
 @media (min-width: variables.$min-desktop-width) {
+  .contacts {
+    margin-bottom: 57px;
+  }
+}
+
+@media (min-width: variables.$min-desktop-width) {
+  .contacts {
+    margin-bottom: 105px;
+  }
+
   .contacts__container {
     display: grid;
     grid-template-columns: 175px 350px 50%;
@@ -22,11 +52,17 @@
   .contacts__map {
     grid-column: 3;
     grid-row: 1/4;
+    margin-left: 25px;
   }
 
   .contacts__title,
-  .contacts__list,
+  .contacts__details-list,
   .contacts__button {
     grid-column: 2;
+  }
+
+  .contacts__details-title,
+  .contacts__details-value {
+    margin: 15px 0;
   }
 }

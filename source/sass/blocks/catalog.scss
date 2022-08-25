@@ -1,14 +1,29 @@
 @use "../global/variables";
 
+.catalog__item {
+  margin-bottom: 30px;
+}
+
+.catalog__header {
+  margin-bottom: 30px;
+}
+
 @media (min-width: variables.$min-tablet-width) {
+  .catalog__header {
+    margin-bottom: 79px;
+  }
+
   .catalog__item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: min-content 1fr;
   }
 }
 
 @media (min-width: variables.$min-desktop-width) {
+  .catalog__header {
+    margin-bottom: 128px;
+  }
+
   .catalog__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -17,6 +32,6 @@
 
   .catalog__item {
     grid-template-columns: 1fr;
-    grid-template-rows: min-content min-content 1fr;
+    grid-template-rows: min-content 1fr;
   }
 }
