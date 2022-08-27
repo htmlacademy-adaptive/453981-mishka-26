@@ -5,16 +5,19 @@
   width: 100%;
 }
 
-.page-header--nojs {
+.page-header__navigation {
   position: relative;
-}
-
-.page-header--nojs .page-header__navigation-toggle {
-  display: none;
+  width: 100%;
+  display: flex;
+  background-color: transparent;
+  flex-direction: column;
+  flex-wrap: wrap;
+  z-index: 1;
 }
 
 .page-header__delivery {
   display: none;
+  margin: 0;
 }
 
 .page-header__logo-wrapper {
@@ -43,56 +46,62 @@
 @media (min-width: variables.$min-tablet-width) {
   .page-header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .page-header__delivery {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    min-height: 89px;
   }
 
   .page-header__navigation {
-    display: grid;
-    grid-template-columns: 1fr max-content;
+    flex-direction: row;
+    max-height: 89px;
+  }
+
+  .page-header__logo-wrapper {
+    position: absolute;
+    padding: 20px 0;
+  }
+
+  .page-header__navigation-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
   }
 
   .page-header__navigation-toggle {
     display: none;
   }
 
-  .page-header__site-navigation {
-    display: flex;
-    grid-row: 2;
-    white-space: nowrap;
+  .page-header__user-navigation {
+    order: -1;
+    justify-content: flex-end;
+    flex-basis: 100%;
   }
 
-  .page-header__user-navigation {
+  .page-header__delivery {
     display: flex;
-    grid-column: 2;
-    white-space: nowrap;
+    align-items: center;
+    margin-left: auto;
   }
 }
 
 @media (min-width: variables.$min-desktop-width) {
-  .page-header__delivery {
-    grid-column: 3;
+  .page-header__logo-wrapper {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
   }
 
-  .page-header__navigation {
-    grid-template-columns: auto 1fr auto;
+  .page-header__navigation-wrapper {
+    justify-content: space-between;
+  }
+
+  .page-header__user-navigation {
+    order: 0;
+    flex-basis: auto;
+    margin-right: 2px;
   }
 
   .page-header__promo-navigation {
     display: flex;
-  }
-
-  .page-header__site-navigation {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  .page-header__user-navigation {
-    grid-column: 3;
-    grid-row: 1;
   }
 }

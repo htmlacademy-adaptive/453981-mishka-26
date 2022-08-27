@@ -1,5 +1,9 @@
 @use "../global/variables";
 
+.user-navigation__link {
+  flex-grow: 1;
+}
+
 @media (min-width: variables.$min-tablet-width) {
   .user-navigation {
     display: flex;
@@ -7,7 +11,14 @@
   }
 
   .user-navigation__item {
-    padding: 30px 35px 30px 30px;
     border-left: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .user-navigation__link {
+    padding: 0 32px;
+
+    &--cart {
+      padding-right: 0;
+    }
   }
 }
