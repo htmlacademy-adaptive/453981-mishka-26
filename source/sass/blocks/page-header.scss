@@ -13,6 +13,26 @@
   flex-direction: column;
   flex-wrap: wrap;
   z-index: 1;
+
+  &--open {
+    .page-header__navigation-wrapper {
+      visibility: visible;
+    }
+  }
+}
+
+.page-header__navigation-wrapper {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  visibility: hidden;
+}
+
+.page-header__navigation-toggle {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
 }
 
 .page-header__delivery {
@@ -28,15 +48,6 @@
 
 .page-header__logo-image {
   vertical-align: top;
-}
-
-.page-header__navigation-toggle {
-  position: absolute;
-  top: 50%;
-  right: 30px;
-  width: 20px;
-  height: 20px;
-  transform: translateY(-50%);
 }
 
 .page-header__promo-navigation {
@@ -60,10 +71,12 @@
   }
 
   .page-header__navigation-wrapper {
+    position: static;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
+    visibility: visible;
   }
 
   .page-header__navigation-toggle {
