@@ -4,7 +4,7 @@
   margin-bottom: 31px;
   padding: 74px 0 0;
   background-color: variables.$main-background-color;
-  background-image: url("../../img/hero-mobile.png");
+  background-image: url("../../img/hero-mobile.jpg");
   background-position: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,7 +23,7 @@
   .content__header {
     margin-bottom: 52px;
     padding-top: 154px;
-    background-image: url("../../img/hero-tablet.png");
+    background-image: url("../../img/hero-tablet.jpg");
   }
 }
 
@@ -35,6 +35,6 @@
   .content__header {
     margin-bottom: 71px;
     padding-top: 157px;
-    background-image: url("../../img/hero-desktop.png");
+    background-image: url("../../img/hero-desktop.jpg");
   }
 }
