@@ -122,7 +122,13 @@
         <dd class="offers__details-value">15 см</dd>
       </dl>
 
-      <img class="offers__image" src="./img/offers-triple-set-mobile.jpg" width="260" height="315" alt="Набор из трех вязаных корзинок.">
+      <div class="offers__image-container">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="./img/offers-triple-set-desktop.jpg, ./img/offers-triple-set-desktop-2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="./img/offers-triple-set-tablet.jpg, ./img/offers-triple-set-tablet-2x.jpg 2x">
+          <img class="offers__image" src="./img/offers-triple-set-mobile.jpg" srcset="./img/offers-triple-set-mobile-2x.jpg 2x" width="260" height="315" alt="Набор из трех вязаных корзинок.">
+        </picture>
+      </div>
 
       <span class="offers__price">Цена:&nbsp;990&nbsp;руб.</span>
 
@@ -204,10 +210,10 @@
   </section>
 
   <section class="contacts section">
-    <div class="contacts__container section__container">
-      <h2 class="heading heading--h2 contacts__title">Контакты</h2>
+    <div class="contacts__container">
+      <h2 class="heading heading--h2 contacts__title section__container">Контакты</h2>
 
-      <dl class="contacts__details-list">
+      <dl class="contacts__details-list section__container">
         <dt class="contacts__details-title">e-mail:</dt>
         <dd class="contacts__details-value">
           <a class="link contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
@@ -232,9 +238,11 @@
         </iframe>
       </div>
 
-      <button class="button contacts__button" type="button">
-        Напишите нам
-      </button>
+      <div class="section__container contacts__button-container">
+        <button class="button contacts__button" type="button">
+          Напишите нам
+        </button>
+      </div>
     </div>
   </section>
 </main>
