@@ -20,6 +20,10 @@
   margin-bottom: 6px;
 }
 
+.product__image {
+  width: 100%;
+}
+
 .product__image-link {
   display: block;
 }
@@ -40,6 +44,11 @@
 
   .product__description {
     flex-grow: 1;
+    font-size: 15px;
+  }
+
+  .product__price {
+    font-size: 17px;
   }
 }
 

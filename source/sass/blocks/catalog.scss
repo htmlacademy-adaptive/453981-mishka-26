@@ -10,12 +10,28 @@
 
 @media (min-width: variables.$min-tablet-width) {
   .catalog__header {
+    position: relative;
     margin-bottom: 79px;
+    padding-top: 101px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -14px;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 24px;
+      background-image: url("../../img/zigzag-features.png");
+      background-repeat: repeat-x;
+      z-index: 1;
+    }
   }
 
   .catalog__item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 54px;
   }
 }
 
