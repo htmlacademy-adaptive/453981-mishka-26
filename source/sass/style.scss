@@ -10,6 +10,7 @@
 @use "blocks/section";
 // blocks
 @use "blocks/advantages";
+@use "blocks/burger-menu";
 @use "blocks/catalog";
 @use "blocks/contacts";
 @use "blocks/content";
@@ -23,6 +24,7 @@
 @use "blocks/order";
 @use "blocks/page-footer";
 @use "blocks/page-header";
+@use "blocks/promo-navigation";
 @use "blocks/product";
 @use "blocks/production";
 @use "blocks/site-navigation";

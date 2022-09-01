@@ -1,11 +1,28 @@
 @use "../global/variables";
 
+.slider__buttons {
+  display: flex;
+}
+
 .slider__button {
+  display: flex;
+  justify-content: center;
+  flex: 1 0 auto;
+  padding: 13px;
   border: 1px solid variables.$light-gray;
+
+  &:first-child {
+    border-right: none;
+  }
 }
 
 @media (min-width: variables.$min-tablet-width) {
+  .slider__buttons {
+    bottom: 55px;
+  }
+
   .slider__button {
+    padding: 0 18px;
     border: none;
   }
 }

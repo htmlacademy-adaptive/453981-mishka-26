@@ -2,6 +2,16 @@
 
 @media (min-width: variables.$min-desktop-width) {
   .promo-navigation__item {
-    padding: 30px 35px 30px 30px;
+    height: auto;
+    margin-right: 60px;
+    padding: 22px 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .promo-navigation__link {
+    font-size: 15px;
   }
 }

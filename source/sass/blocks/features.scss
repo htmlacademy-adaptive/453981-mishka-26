@@ -12,12 +12,14 @@
   &--interior {
     background-color: variables.$primary-light;
     background-image: url("../../img/interior.svg");
+    //noinspection CssInvalidPropertyValue
     background-position-x: right 36px;
   }
 
   &--toys {
     background-color: variables.$primary-dark;
     background-image: url("../../img/toy.svg");
+    //noinspection CssInvalidPropertyValue
     background-position-x: right 27px;
   }
 }
@@ -27,6 +29,7 @@
   padding: 24px 90px 31px 30px;
   font-size: 19px;
   line-height: 24px;
+  font-weight: 700;
   color: variables.$white;
   text-align: left;
 }
