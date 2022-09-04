@@ -33,8 +33,13 @@
   }
 }
 
-.production__image {
+.production__image,
+.production__video {
   width: 100%;
+}
+
+.production__video {
+  z-index: -1;
 }
 
 .production__button {
@@ -47,7 +52,8 @@
     margin-bottom: 64px;
   }
 
-  .production__image {
+  .production__image,
+  .production__video {
     grid-row: 1;
   }
 
@@ -84,7 +90,8 @@
     }
   }
 
-  .production__image {
+  .production__image,
+  .production__video {
     grid-column: 1/3;
     grid-row: 1/4;
   }

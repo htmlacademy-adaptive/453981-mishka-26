@@ -3,8 +3,10 @@
 .button {
   background-color: variables.$white;
   border: 2px solid variables.$dark-gray;
+  color: variables.$dark-gray;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
+  cursor: pointer;
 }

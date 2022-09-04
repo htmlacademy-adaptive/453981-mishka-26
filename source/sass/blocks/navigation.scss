@@ -28,9 +28,21 @@
   color: variables.$black;
 }
 
+.navigation__link:hover svg {
+  fill: variables.$primary-light;
+  opacity: 1;
+}
+
+.navigation__link:active svg {
+  fill: variables.$primary-light;
+  opacity: 0.3;
+}
+
 .navigation__link-icon {
   position: absolute;
   left: 30px;
+  fill: variables.$black;
+  opacity: 0.2;
 }
 
 @media (min-width: variables.$min-tablet-width) {
@@ -70,5 +82,15 @@
 
   .navigation__list {
     flex-basis: 50%;
+  }
+
+  .navigation__link {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

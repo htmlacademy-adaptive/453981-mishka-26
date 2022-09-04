@@ -91,6 +91,17 @@
     padding-top: 80px;
   }
 
+  .contacts__email {
+    &:hover,
+    &:active {
+      color: variables.$primary-extra-dark;
+    }
+
+    &:active {
+      border-bottom: 1px solid fade-out(variables.$primary-extra-dark, 0.9);
+    }
+  }
+
   .contacts__details-list {
     grid-template-columns: 80px 250px;
     grid-gap: 0 0;

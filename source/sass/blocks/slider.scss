@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   flex: 1 0 auto;
+  margin: 0;
   padding: 13px;
   border: 1px solid variables.$light-gray;
 
@@ -26,3 +27,16 @@
     border: none;
   }
 }
+
+@media (min-width: variables.$min-desktop-width) {
+  .slider__button {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
