@@ -3,7 +3,6 @@
 
 .offers {
   position: relative;
-  margin-bottom: 73px;
 
   &::after {
     content: "";
@@ -26,7 +25,7 @@
 
 .offers__description {
   grid-area: description;
-  margin: 0 0 28px;
+  margin: 0 0 17px;
 }
 
 .offers__details-list {
@@ -39,7 +38,7 @@
 
 .offers__details-title,
 .offers__details-value {
-  padding: 15px 0;
+  padding: 10px 0;
   border-bottom: 1px solid variables.$line-color;
 }
 
@@ -58,7 +57,7 @@
 
 .offers__order-button {
   grid-area: order;
-  padding: 16px 26px;
+  padding: 14px 26px;
 }
 
 .offers__price {
@@ -90,13 +89,10 @@
 
 @media (min-width: variables.$min-tablet-width) {
   .offers {
-    margin-bottom: 125px;
-
     &::before {
       content: "";
       position: absolute;
-      top: -62px;
-      left: -3px;
+      top: -65px;
       display: block;
       width: 100%;
       height: 24px;
@@ -130,20 +126,22 @@
 
   .offers__subtitle {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 5px;
+    right: 23px;
     width: 80px;
+    line-height: 17px;
     text-align: center;
   }
 
   .offers__description {
-    margin: 0 42px 48px 0;
+    margin: 0 42px 37px 0;
     font-size: 17px;
     line-height: 30px;
   }
 
   .offers__image-container {
     margin-bottom: 0;
+    padding-top: 12px;
   }
 
   .offers__image {
@@ -161,6 +159,7 @@
 
   .offers__price {
     margin: 0 42px 33px 0;
+    font-size: 20px;
   }
 
   .offers__order-button {
@@ -170,8 +169,6 @@
 
 @media (min-width: variables.$min-desktop-width) {
   .offers {
-    margin-bottom: 164px;
-
     &::before {
       top: -85px;
     }
@@ -199,19 +196,34 @@
   }
 
   .offers__title {
-    padding-top: 61px;
+    margin-bottom: 35px;
+    padding-top: 63px;
   }
 
   .offers__subtitle {
-    top: 66px;
-    left: 52px;
+    top: 71px;
+    left: 42px;
+  }
+
+  .offers__image-container {
+    padding-top: 0;
   }
 
   .offers__description {
-    margin-bottom: 60px;
+    margin-right: 58px;
+    margin-bottom: 50px;
   }
 
   .offers__details-list {
-    margin-bottom: 100px;
+    margin-right: 58px;
+    margin-bottom: 110px;
+  }
+
+  .offers__price {
+    margin-right: 58px;
+  }
+
+  .offers__order-button {
+    margin-right: 58px;
   }
 }

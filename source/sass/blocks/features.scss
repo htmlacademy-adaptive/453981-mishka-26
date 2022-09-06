@@ -40,7 +40,12 @@
   .features {
     grid-template-columns: 1fr 1fr;
     width: 668px;
-    margin: 0 auto;
+  }
+
+  .features__link {
+    padding-left: 36px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

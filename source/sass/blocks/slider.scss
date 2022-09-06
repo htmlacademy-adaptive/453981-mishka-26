@@ -19,7 +19,7 @@
 
 @media (min-width: variables.$min-tablet-width) {
   .slider__buttons {
-    bottom: 55px;
+    bottom: 26px;
   }
 
   .slider__button {
@@ -29,6 +29,10 @@
 }
 
 @media (min-width: variables.$min-desktop-width) {
+  .slider__buttons {
+    bottom: 75px;
+  }
+
   .slider__button {
     &:hover {
       opacity: 0.6;
@@ -39,4 +43,3 @@
     }
   }
 }
-

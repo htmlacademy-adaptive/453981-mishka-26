@@ -8,6 +8,10 @@
   margin-bottom: 30px;
 }
 
+.catalog__production {
+  margin-bottom: 58px;
+}
+
 @media (min-width: variables.$min-tablet-width) {
   .catalog__header {
     position: relative;
@@ -28,6 +32,10 @@
     }
   }
 
+  .catalog__production {
+    margin-bottom: 64px;
+  }
+
   .catalog__item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -37,7 +45,12 @@
 
 @media (min-width: variables.$min-desktop-width) {
   .catalog__header {
-    margin-bottom: 128px;
+    margin-bottom: 130px;
+    padding-bottom: 94px;
+  }
+
+  .catalog__production {
+    margin-bottom: 100px;
   }
 
   .catalog__list {

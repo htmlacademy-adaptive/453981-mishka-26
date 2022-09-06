@@ -1,20 +1,17 @@
 @use "../global/variables";
 
-.production {
-  margin-bottom: 58px;
-}
-
 .production__container {
   display: grid;
   border: 1px solid variables.$line-color;
 }
 
 .production__wrapper {
-  padding: 35px;
+  padding: 35px 29px 33px 34px;
 }
 
 .production__description {
   margin: 0 0 41px;
+  font-size: 13px;
 }
 
 .production__title {
@@ -23,7 +20,7 @@
 
   &::before {
     position: absolute;
-    top: 20px;
+    top: 35px;
     left: 34px;
     width: 32px;
     height: 22px;
@@ -33,65 +30,62 @@
   }
 }
 
-.production__image,
-.production__video {
+.production__image {
   width: 100%;
 }
 
-.production__video {
-  z-index: -1;
-}
-
 .production__button {
-  padding: 18px 11px;
+  padding: 14px 10px;
   width: 100%;
 }
 
 @media (min-width: variables.$min-tablet-width) {
-  .production {
-    margin-bottom: 64px;
+  .production__description {
+    margin-bottom: 40px;
+    font-size: 15px;
+    line-height: 30px;
   }
 
-  .production__image,
-  .production__video {
+  .production__image-container {
     grid-row: 1;
   }
 
   .production__title {
-    padding-bottom: 24px;
+    margin-bottom: 25px;
+    padding: 38px 0 0 107px;
+
+    &::before {
+      top: 36px;
+      left: 42px;
+    }
   }
 
   .production__wrapper {
-    padding-top: 0;
+    padding: 0 42px 45px 42px;
   }
 }
 
 @media (min-width: variables.$min-desktop-width) {
-  .production {
-    margin-bottom: 105px;
-  }
-
   .production__container {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0 52px;
   }
 
   .production__wrapper {
-    padding: 0 28px;
+    padding: 20px 57px 26px 25px;
   }
 
   .production__title {
-    padding: 96px 28px 0;
-    margin-bottom: 28px;
+    padding: 93px 50px 0 28px;
+    margin-bottom: 7px;
 
     &::before {
-      top: 53px;
-      left: 28px;
+      top: 44px;
+      left: 27px;
     }
   }
 
-  .production__image,
-  .production__video {
+  .production__image-container {
     grid-column: 1/3;
     grid-row: 1/4;
   }
@@ -99,5 +93,9 @@
   .production__description,
   .production__button {
     grid-column: 3;
+  }
+
+  .production__description {
+    margin-bottom: 52px;
   }
 }

@@ -4,9 +4,24 @@
   background-color: variables.$white;
   border: 2px solid variables.$dark-gray;
   color: variables.$dark-gray;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
   cursor: pointer;
+
+  &--accented {
+    padding: 18px 68px;
+    width: 100%;
+    color: variables.$white;
+    background-color: variables.$primary-light;
+  }
+}
+
+@media (min-width: variables.$min-desktop-width) {
+  .button {
+    padding: 14px 39px;
+    font-size: 17px;
+  }
 }

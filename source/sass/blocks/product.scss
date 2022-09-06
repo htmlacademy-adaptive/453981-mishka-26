@@ -82,6 +82,10 @@
     }
   }
 
+  .product__description {
+    margin-bottom: 13px;
+  }
+
   .product__purchase svg {
     &:hover {
       fill: variables.$primary-light;

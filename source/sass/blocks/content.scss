@@ -2,7 +2,7 @@
 
 .content__header {
   margin-bottom: 31px;
-  padding: 74px 0 0;
+  padding: 72px 0 0;
   background-color: variables.$main-background-color;
   background-image: url("../../img/hero-mobile.jpg");
   background-position-y: -20px;
@@ -20,16 +20,53 @@
   padding: 0 30px;
 }
 
+.content__advantages {
+  margin-bottom: 58px;
+}
+
+.content__offers {
+  margin-bottom: 73px;
+}
+
+.content__feedback {
+  margin-bottom: 90px;
+}
+
+.content__contacts {
+  margin-bottom: 40px;
+}
+
 @media (min-width: variables.$min-tablet-width) {
   .content__title {
     margin-bottom: 372px;
   }
 
   .content__header {
-    margin-bottom: 52px;
+    margin-bottom: 55px;
     padding-top: 154px;
     background-image: url("../../img/hero-tablet.jpg");
     background-size: cover;
+    background-position-y: 0;
+  }
+
+  .content__header-features {
+    margin: 0 auto;
+  }
+
+  .content__advantages {
+    margin-bottom: 82px;
+  }
+
+  .content__offers {
+    margin-bottom: 125px;
+  }
+
+  .content__feedback {
+    margin-bottom: 153px;
+  }
+
+  .content__contacts {
+    margin-bottom: 57px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -52,5 +89,21 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/hero-desktop-2x.jpg");
     }
+  }
+
+  .content__advantages {
+    margin-bottom: 90px;
+  }
+
+  .content__offers {
+    margin-bottom: 164px;
+  }
+
+  .content__feedback {
+    margin-bottom: 160px;
+  }
+
+  .content__contacts {
+    margin-bottom: 105px;
   }
 }

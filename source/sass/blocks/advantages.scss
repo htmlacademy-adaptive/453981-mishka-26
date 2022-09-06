@@ -1,10 +1,6 @@
 @use "../global/mixins";
 @use "../global/variables";
 
-.advantages {
-  margin-bottom: 58px;
-}
-
 .advantages__title {
   margin-bottom: 82px;
 }
@@ -24,10 +20,12 @@
 
 .advantages__item {
   position: relative;
+  padding-right: 10px;
 
   &::before {
     position: absolute;
-    top: -50px;
+    top: -56px;
+    left: 5px;
     width: 55px;
     height: 55px;
     background-repeat: no-repeat;
@@ -60,25 +58,39 @@
 }
 
 @media (min-width: variables.$min-tablet-width) {
-  .advantages {
-    margin-bottom: 82px;
+  .advantages__title {
+    margin-bottom: 97px;
   }
 
   .advantages__list {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, min-content);
     grid-auto-flow: column;
+    grid-gap: 110px 0;
+  }
+
+  .advantages__item {
+    padding-right: 40px;
+  }
+
+  .advantages__description {
+    font-size: 20px;
+    line-height: 22px;
   }
 }
 
 @media (min-width: variables.$min-desktop-width) {
-  .advantages {
-    margin-bottom: 90px;
-  }
-
   .advantages__container {
     display: grid;
     grid-template-columns: 175px 1fr;
+  }
+
+  .advantages__list {
+    grid-template-columns: 350px 350px;
+  }
+
+  .advantages__item {
+    padding-right: 55px;
   }
 
   .advantages__title,
