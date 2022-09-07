@@ -4,7 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
 }
 
 .social__list {
@@ -12,8 +11,21 @@
   gap: 29px;
 }
 
-@media (min-width: variables.$min-tablet-width) {
-  .social {
-    margin: 0;
+.social__link {
+  svg {
+    fill: variables.$icon-color;
+  }
+}
+
+@media (min-width: variables.$min-desktop-width) {
+  .social__link svg {
+    &:hover {
+      fill: variables.$primary-extra-dark;
+    }
+
+    &:active {
+      fill: variables.$primary-extra-dark;
+      opacity: 0.3;
+    }
   }
 }

@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 22px;
 }
 
 .developed__title {
@@ -13,8 +12,23 @@
   line-height: 18px;
 }
 
-@media (min-width: variables.$min-tablet-width) {
-  .developed {
-    margin: 0;
+.developed__link {
+  display: flex;
+
+  svg {
+    fill: variables.$primary-light;
+  }
+}
+
+@media (min-width: variables.$min-desktop-width) {
+  .developed__link svg {
+    &:hover {
+      fill: variables.$primary-extra-dark;
+    }
+
+    &:active {
+      fill: variables.$primary-extra-dark;
+      opacity: 0.3;
+    }
   }
 }

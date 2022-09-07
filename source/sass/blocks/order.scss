@@ -1,11 +1,7 @@
 @use "../global/variables";
 
-.order {
-  margin-bottom: 55px;
-}
-
 .order__header {
-  margin-bottom: 17px;
+  margin-bottom: 15px;
 }
 
 .order__container {
@@ -23,13 +19,13 @@
 }
 
 .order__description {
-  margin: 0 0 30px;
+  margin: 0 0 27px;
   font-size: 13px;
 }
 
 .order__group {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 
   &--small-gap {
     margin-bottom: 15px;
@@ -41,7 +37,7 @@
   position: relative;
   z-index: 1;
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 27px;
   padding-right: 25px;
   background-color: variables.$white;
 
@@ -61,6 +57,18 @@
 .order__fields {
   display: grid;
   flex-grow: 1;
+}
+
+.order__field-name-title {
+  margin-top: 7px;
+}
+
+.order__field-last-name-title {
+  margin-top: -5px;
+}
+
+.order__field-middle-name-title {
+  margin-top: -8px;
 }
 
 .order__type {
@@ -87,7 +95,7 @@
 }
 
 .order__button {
-  padding: 18px 37px;
+  padding: 14px 37px;
   width: 100%;
 }
 
@@ -159,10 +167,14 @@
 
   .order__description {
     margin-bottom: 13px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .order__required-fields {
     margin: 0;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .order__actions {
@@ -174,6 +186,7 @@
 
   .order__color {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px 22px;
   }
 
   .order__group {
@@ -188,7 +201,7 @@
       padding-bottom: 12px;
 
       .order__group-title {
-        padding-top: 25px;
+        padding-top: 13px;
       }
     }
 
@@ -196,9 +209,13 @@
       padding-top: 12px;
 
       .order__group-title {
-        padding-top: 25px;
+        padding-top: 13px;
       }
     }
+  }
+
+  .order__type {
+    grid-gap: 23px 0;
   }
 
   .order__group-title {
@@ -206,17 +223,27 @@
     padding-top: 15px;
   }
 
+  .order__full-name {
+    grid-gap: 18px 0;
+  }
+
   .order__full-name .order__field {
     flex-direction: row;
     align-items: center;
   }
 
+  .order__field-name-title,
+  .order__field-last-name-title,
+  .order__field-middle-name-title {
+    margin-top: 0;
+  }
+
   .order__phone::after {
-    right: 17px;
+    right: 26px;
   }
 
   .order__email::after {
-    right: 15px;
+    right: 24px;
   }
 
   .order__field-title {
@@ -237,28 +264,55 @@
 
   .order__button {
     width: auto;
+    padding: 14px 25px;
   }
 }
 
 @media (min-width: variables.$min-desktop-width) {
   .order__header {
-    margin-bottom: 116px;
+    margin-bottom: 121px;
+    padding-bottom: 90px;
   }
 
   .order__group-title {
-    flex-basis: 130px;
+    flex-basis: 175px;
+    padding-top: 18px;
+    padding-left: 60px;
   }
 
   .order__actions,
   .order__description {
-    padding-left: 130px;
+    padding: 0 175px;
   }
 
   .order__color {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 240px);
+  }
+
+  .order__full-name,
+  .order__phone,
+  .order__email,
+  .order__additional {
+    padding-right: 175px;
+  }
+
+  .order__phone {
+    &::after {
+      right: 184px;
+    }
+  }
+
+  .order__email {
+    &::after {
+      right: 180px;
+    }
   }
 
   .order__radio-icon {
     margin-right: 28px;
+  }
+
+  .order__button {
+    padding: 14px 30px;
   }
 }

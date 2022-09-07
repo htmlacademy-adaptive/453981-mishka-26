@@ -32,6 +32,11 @@
   font-weight: 700;
 }
 
+.product__purchase svg {
+  fill: variables.$black;
+  opacity: 0.2;
+}
+
 .product__divider {
   margin-bottom: 22px;
 }
@@ -55,5 +60,41 @@
 @media (min-width: variables.$min-desktop-width) {
   .product__image-link {
     grid-row: 1;
+  }
+
+  .product__wrapper {
+    &:hover {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .product__title {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .product__description {
+    margin-bottom: 13px;
+  }
+
+  .product__purchase svg {
+    &:hover {
+      fill: variables.$primary-light;
+      opacity: 1;
+    }
+
+    &:active {
+      fill: variables.$primary-light;
+      opacity: 0.3;
+    }
   }
 }

@@ -12,9 +12,22 @@
   z-index: 1;
   display: flex;
   margin: 0 auto;
-  width: 100%;
+  padding: 28px 30px 46px;
   flex-direction: column;
   background-color: variables.$white;
+}
+
+.modal__title {
+  margin-bottom: 14px;
+  color: variables.$black;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.modal__subtitle {
+  margin-bottom: 21px;
+  line-height: 30px;
 }
 
 @media (min-width: variables.$min-tablet-width) {

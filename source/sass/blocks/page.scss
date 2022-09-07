@@ -12,3 +12,13 @@
   padding: 0;
   background-color: variables.$white;
 }
+
+.page__order {
+  margin-bottom: 55px;
+}
+
+@media (min-width: variables.$min-desktop-width) {
+  .page__order {
+    margin-bottom: 46px;
+  }
+}

@@ -16,6 +16,7 @@
 .form__text-field {
   padding: 17px 0;
   width: 100%;
+  box-sizing: border-box;
   font-size: 17px;
   line-height: 19px;
   border: none;
@@ -25,10 +26,14 @@
 
 .form__textarea {
   width: 100%;
+  margin-top: -5px;
+  margin-bottom: -2px;
   padding: 17px;
   box-sizing: border-box;
   resize: none;
   border: 2px solid variables.$black;
+  font-size: 17px;
+  line-height: 18px;
 }
 
 .form__title {
@@ -40,6 +45,18 @@
   background-color: variables.$white;
 }
 
+.form__radio-icon {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+}
+
+.form__checkbox-icon {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+}
+
 @media (min-width: variables.$min-tablet-width) {
   .form__group {
     display: grid;
@@ -48,5 +65,22 @@
     &::before {
       display: none;
     }
+  }
+
+  .form__radio-icon,
+  .form__checkbox-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .form__label-text {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .form__text-field {
+    padding: 15px 18px;
+    font-size: 19px;
+    line-height: 18px;
   }
 }

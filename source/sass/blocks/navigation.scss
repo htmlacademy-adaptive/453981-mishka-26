@@ -1,9 +1,5 @@
 @use "../global/variables";
 
-.navigation {
-  margin: 0 auto;
-}
-
 .navigation__list {
   display: flex;
   flex-direction: column;
@@ -28,9 +24,21 @@
   color: variables.$black;
 }
 
+.navigation__link:hover svg {
+  fill: variables.$primary-light;
+  opacity: 1;
+}
+
+.navigation__link:active svg {
+  fill: variables.$primary-light;
+  opacity: 0.3;
+}
+
 .navigation__link-icon {
   position: absolute;
   left: 30px;
+  fill: variables.$black;
+  opacity: 0.2;
 }
 
 @media (min-width: variables.$min-tablet-width) {
@@ -52,6 +60,7 @@
     display: flex;
     padding: 0;
     align-items: center;
+    font-size: 15px;
   }
 
   .navigation__link-icon {
@@ -70,5 +79,15 @@
 
   .navigation__list {
     flex-basis: 50%;
+  }
+
+  .navigation__link {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

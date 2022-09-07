@@ -7,8 +7,8 @@
 @media (min-width: variables.$min-tablet-width) {
   .site-navigation__item {
     height: auto;
-    margin-left: 35px;
-    padding: 22px 0;
+    margin-left: 37px;
+    padding: 20px 0;
 
     &:first-child {
       margin-left: 0;
@@ -32,5 +32,6 @@
 
   .site-navigation__link {
     padding: 0 35px;
+    font-size: 17px;
   }
 }

@@ -6,6 +6,7 @@
 }
 
 .user-quote__author {
+  margin-bottom: 3px;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
@@ -22,9 +23,23 @@
 }
 
 @media (min-width: variables.$min-tablet-width) {
+  .user-quote__author {
+    font-size: 18px;
+  }
+
   .user-quote__text {
     margin-bottom: 60px;
     font-size: 17px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: variables.$min-desktop-width) {
+  .user-quote__author {
+    font-size: 17px;
+  }
+
+  .user-quote__text {
+    margin-bottom: 45px;
   }
 }

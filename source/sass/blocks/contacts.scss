@@ -1,11 +1,7 @@
 @use "../global/variables";
 
-.contacts {
-  margin-bottom: 40px;
-}
-
 .contacts__title {
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 }
 
 .contacts__address {
@@ -13,14 +9,14 @@
 }
 
 .contacts__email {
-  padding-bottom: 5px;
+  padding-bottom: 2px;
   border-bottom: 1px solid variables.$line-color-secondary;
 }
 
 .contacts__details-list {
   display: grid;
   grid-template-columns: 76px 1fr;
-  grid-gap: 40px 0;
+  grid-gap: 30px 0;
   margin: 0 30px 62px;
   font-size: 14px;
   line-height: 30px;
@@ -32,7 +28,7 @@
 
 .contacts__map {
   height: 450px;
-  margin-bottom: 42px;
+  margin-bottom: 47px;
   background-color: variables.$timberwolf;
 }
 
@@ -42,23 +38,35 @@
 
 .contacts__button {
   width: 100%;
-  padding: 16px 26px;
+  padding: 14px 36px;
 }
 
 @media (min-width: variables.$min-tablet-width) {
-  .contacts {
-    margin-bottom: 57px;
+  .contacts__title {
+    position: relative;
+    margin-bottom: 50px;
+
+    &::after {
+      position: absolute;
+      top: -22px;
+      right: 3px;
+      width: 47px;
+      height: 81px;
+      background-image: url("../../img/icon-flag.svg");
+      background-repeat: no-repeat;
+      content: "";
+    }
   }
 
   .contacts__details-list {
-    grid-template-columns: 80px 254px 80px 254px;
+    grid-template-columns: 77px 257px 77px 257px;
     margin: 0 auto 50px;
     font-size: 17px;
   }
 
   .contacts__map {
     height: 457px;
-    margin: 0 0 56px;
+    margin: 0 0 53px;
   }
 
   .contacts__button-container {
@@ -72,31 +80,53 @@
 }
 
 @media (min-width: variables.$min-desktop-width) {
-  .contacts {
-    margin-bottom: 105px;
-  }
-
   .contacts__container {
     display: grid;
     grid-template-columns: 175px 350px 50%;
+    grid-template-rows: min-content 1fr min-content;
+    max-width: 1050px;
+    margin: 0 auto;
   }
 
   .contacts__map {
     grid-column: 3;
     grid-row: 1/4;
-    margin-left: 25px;
+    margin: 0 0 0 25px;
   }
 
   .contacts__title {
+    position: relative;
+    max-width: 350px;
+    margin-bottom: 35px;
     padding-top: 80px;
+
+    &::after {
+      top: 65px;
+      left: -112px;
+    }
+  }
+
+  .contacts__email {
+    padding-bottom: 7px;
+
+    &:hover,
+    &:active {
+      color: variables.$primary-extra-dark;
+    }
+
+    &:active {
+      border-bottom: 1px solid fade-out(variables.$primary-extra-dark, 0.9);
+    }
   }
 
   .contacts__details-list {
     grid-template-columns: 80px 250px;
     grid-gap: 0 0;
+    max-width: 350px;
   }
 
   .contacts__button-container {
+    max-width: 350px;
     text-align: left;
   }
 
@@ -108,6 +138,6 @@
 
   .contacts__details-title,
   .contacts__details-value {
-    margin: 15px 0;
+    margin: 0;
   }
 }
