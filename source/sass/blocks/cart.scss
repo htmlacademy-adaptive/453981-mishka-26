@@ -1,0 +1,32 @@
+@use "../global/variables";
+
+.cart__field {
+  display: flex;
+  column-gap: 7px;
+  margin: 0 0 31px;
+  padding: 0;
+  border: none;
+}
+
+.cart__radio-label {
+  flex-grow: 1;
+  cursor: pointer;
+
+  &:hover .cart__radio {
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.cart__radio {
+  display: block;
+  padding: 16px 0;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.cart__radio-input:checked + .cart__radio {
+  border-color: variables.$line-color-secondary;
+}

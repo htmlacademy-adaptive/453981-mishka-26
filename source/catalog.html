@@ -293,36 +293,38 @@
   </div>
 </footer>
 <div class="modal visually-hidden">
-  <button class="modal__close-button">
-    <span class="visually-hidden">Закрыть.</span>
-  </button>
+  <div class="modal__box">
+    <button class="modal__close-button" type="button">
+      <span class="visually-hidden">Закрыть.</span>
+    </button>
 
-  <h3 class="heading--h3 modal__title">Добавить в корзину</h3>
+    <h3 class="heading--h3 modal__title">Добавить в&nbsp;корзину</h3>
 
-  <span class="modal__subtitle">Выберите размер:</span>
+    <span class="modal__subtitle">Выберите размер:</span>
 
-  <form action="https://echo.htmlacademy.ru/" method="post">
-    <fieldset name="size">
-      <label>
-        <input class="visually-hidden" type="radio" name="size" checked>
+    <form class="cart" action="https://echo.htmlacademy.ru/" method="post">
+      <fieldset class="cart__field" name="size">
+        <label class="cart__radio-label">
+          <input class="cart__radio-input visually-hidden" type="radio" name="size" checked>
 
-        <span class="button cart__radio">S</span>
-      </label>
+          <span class="cart__radio">S</span>
+        </label>
 
-      <label>
-        <input class="visually-hidden" type="radio" name="size">
+        <label class="cart__radio-label">
+          <input class="cart__radio-input visually-hidden" type="radio" name="size">
 
-        <span class="button cart__radio">M</span>
-      </label>
+          <span class="cart__radio">M</span>
+        </label>
 
-      <label>
-        <input class="visually-hidden" type="radio" name="size">
+        <label class="cart__radio-label">
+          <input class="cart__radio-input visually-hidden" type="radio" name="size">
 
-        <span class="button cart__radio">L</span>
-      </label>
-    </fieldset>
-    <button class="button button--accented cart__button" type="submit">Добавить</button>
-  </form>
+          <span class="cart__radio">L</span>
+        </label>
+      </fieldset>
+      <button class="button button--accented cart__button" type="submit">Добавить</button>
+    </form>
+  </div>
 </div>
 <script defer src="./js/modal.js"></script>
 <script defer src="./js/menu.js"></script>
