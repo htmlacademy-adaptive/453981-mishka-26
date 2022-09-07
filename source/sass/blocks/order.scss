@@ -300,11 +300,19 @@
     &::after {
       right: 184px;
     }
+
+    &:hover::after {
+      background-image: url("../../img/icon-phone-pale.svg");
+    }
   }
 
   .order__email {
     &::after {
       right: 180px;
+    }
+
+    &:hover::after {
+      background-image: url("../../img/icon-mail-pale.svg");
     }
   }
 

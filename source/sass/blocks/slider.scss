@@ -35,10 +35,12 @@
 
   .slider__button {
     &:hover {
+      background-color: transparent;
       opacity: 0.6;
     }
 
     &:active {
+      background-color: transparent;
       opacity: 0.3;
     }
   }

@@ -23,5 +23,15 @@
   .button {
     padding: 14px 39px;
     font-size: 17px;
+
+    &:hover {
+      background-color: variables.$dark-gray;
+      color: variables.$white;
+    }
+
+    &:active {
+      background-color: variables.$dark-gray;
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }
