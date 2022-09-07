@@ -22,6 +22,10 @@
   border: none;
   border-bottom: 2px solid variables.$black;
   background-color: transparent;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .form__textarea {
@@ -35,6 +39,10 @@
   font-size: 17px;
   line-height: 18px;
   outline: none;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .form__title {
@@ -44,6 +52,30 @@
   line-height: 16px;
   color: variables.$primary-light;
   background-color: variables.$white;
+}
+
+.form__checkbox ~ .form__checkbox-icon--checked {
+  display: none;
+}
+
+.form__checkbox:checked ~ .form__checkbox-icon:not(.form__checkbox-icon--checked) {
+  display: none;
+}
+
+.form__checkbox:checked ~ .form__checkbox-icon--checked {
+  display: initial;
+}
+
+.form__radio ~ .form__radio-icon--checked {
+  display: none;
+}
+
+.form__radio:checked ~ .form__radio-icon:not(.form__radio-icon--checked) {
+  display: none;
+}
+
+.form__radio:checked ~ .form__radio-icon--checked {
+  display: initial;
 }
 
 .form__radio-icon {
@@ -109,9 +141,13 @@
   }
 
   .form__textarea {
-    &:hover,
+    &:hover {
+      border: 2px solid variables.$line-color-secondary;
+    }
+
     &:active {
       border: 2px solid variables.$line-color-secondary;
+      color: variables.$black;
     }
   }
 }
