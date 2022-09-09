@@ -55,6 +55,12 @@
   width: 100%;
 }
 
+.production__video-container {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+}
+
 .production__button {
   padding: 14px 10px;
   width: 100%;
