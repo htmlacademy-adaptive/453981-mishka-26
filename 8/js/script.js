@@ -1,2 +1,1 @@
-require('./menu')
-require('./modal')
+require("./menu"),require("./modal");
