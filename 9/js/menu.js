@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(()=>{const e=document.querySelector(".page-header__navigation"),n=document.querySelector(".page-header__navigation-toggle");n.addEventListener("click",(function(){e.classList.toggle("page-header__navigation--open"),n.classList.toggle("burger-menu--open")}))}));
