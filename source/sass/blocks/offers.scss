@@ -11,7 +11,7 @@
     display: block;
     width: 100%;
     height: 6px;
-    background-image: url("../../img/zigzag.png");
+    background-image: url("../img/zigzag.png");
     background-repeat: repeat-x;
     background-size: contain;
     z-index: 1;
@@ -96,7 +96,7 @@
       display: block;
       width: 100%;
       height: 24px;
-      background-image: url("../../img/zigzag-features.png");
+      background-image: url("../img/zigzag-features.png");
       background-repeat: repeat-x;
       z-index: 1;
     }
@@ -109,7 +109,7 @@
       display: block;
       width: 100%;
       height: 17px;
-      background-image: url("../../img/zigzag.png");
+      background-image: url("../img/zigzag.png");
       background-repeat: repeat-x;
       z-index: 1;
     }
@@ -182,7 +182,7 @@
       width: 100%;
       max-width: 1050px;
       height: 23px;
-      background-image: url("../../img/zigzag.png");
+      background-image: url("../img/zigzag.png");
       background-repeat: repeat-x;
       transform: translateX(-50%);
       background-position-x: 9px;

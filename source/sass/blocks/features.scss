@@ -11,7 +11,7 @@
 
   &--interior {
     background-color: variables.$primary-light;
-    background-image: url("../../img/interior.svg");
+    background-image: url("../img/interior.svg");
     //noinspection CssInvalidPropertyValue
     background-position-x: right 36px;
     background-position-y: 50%;
@@ -19,7 +19,7 @@
 
   &--toys {
     background-color: variables.$primary-dark;
-    background-image: url("../../img/toy.svg");
+    background-image: url("../img/toy.svg");
     //noinspection CssInvalidPropertyValue
     background-position-x: right 27px;
     background-position-y: 50%;
