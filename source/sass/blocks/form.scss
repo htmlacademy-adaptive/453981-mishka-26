@@ -22,6 +22,10 @@
   border: none;
   border-bottom: 2px solid variables.$black;
   background-color: transparent;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .form__textarea {
@@ -34,6 +38,11 @@
   border: 2px solid variables.$black;
   font-size: 17px;
   line-height: 18px;
+  outline: none;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .form__title {
@@ -45,16 +54,42 @@
   background-color: variables.$white;
 }
 
+.form__checkbox ~ .form__checkbox-icon--checked {
+  display: none;
+}
+
+.form__checkbox:checked ~ .form__checkbox-icon:not(.form__checkbox-icon--checked) {
+  display: none;
+}
+
+.form__checkbox:checked ~ .form__checkbox-icon--checked {
+  display: initial;
+}
+
+.form__radio ~ .form__radio-icon--checked {
+  display: none;
+}
+
+.form__radio:checked ~ .form__radio-icon:not(.form__radio-icon--checked) {
+  display: none;
+}
+
+.form__radio:checked ~ .form__radio-icon--checked {
+  display: initial;
+}
+
 .form__radio-icon {
   flex-shrink: 0;
   width: 42px;
   height: 42px;
+  color: variables.$dark-gray;
 }
 
 .form__checkbox-icon {
   flex-shrink: 0;
   width: 38px;
   height: 38px;
+  color: variables.$dark-gray;
 }
 
 @media (min-width: variables.$min-tablet-width) {
@@ -82,5 +117,37 @@
     padding: 15px 18px;
     font-size: 19px;
     line-height: 18px;
+  }
+}
+
+@media (min-width: variables.$min-desktop-width) {
+  .form__label {
+    &:hover .form__radio-icon,
+    &:hover .form__checkbox-icon {
+      color: variables.$primary-light;
+    }
+
+    &:active .form__radio-icon,
+    &:active .form__checkbox-icon {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .form__text-field {
+    &:hover,
+    &:active {
+      border-bottom: 2px solid variables.$line-color-secondary;
+    }
+  }
+
+  .form__textarea {
+    &:hover {
+      border: 2px solid variables.$line-color-secondary;
+    }
+
+    &:active {
+      border: 2px solid variables.$line-color-secondary;
+      color: variables.$black;
+    }
   }
 }
