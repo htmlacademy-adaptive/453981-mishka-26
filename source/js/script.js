@@ -1,2 +1,0 @@
-require('./menu')
-require('./modal')
