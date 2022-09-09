@@ -5,9 +5,9 @@
   padding: 72px 0 0;
   background-color: variables.$main-background-color;
   background-image: url("../img/hero-mobile.jpg");
-  background-position-y: -20px;
+  background-position: 50% -20px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
   text-align: center;
 
   @media (min-resolution: 2dppx) {
