@@ -21,6 +21,13 @@
       visibility: visible;
     }
   }
+
+  &--nojs {
+    .page-header__navigation-wrapper {
+      position: static;
+      visibility: visible;
+    }
+  }
 }
 
 .page-header__navigation-wrapper {
