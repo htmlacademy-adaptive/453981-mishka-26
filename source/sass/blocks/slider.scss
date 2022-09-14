@@ -17,6 +17,10 @@
   }
 }
 
+.slider__button svg {
+  fill: variables.$black;
+}
+
 @media (min-width: variables.$min-tablet-width) {
   .slider__buttons {
     bottom: 26px;
